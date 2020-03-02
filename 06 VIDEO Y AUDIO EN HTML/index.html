@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video y audio en html</title>
+</head>
+<body>
+    <!-- Elemento video y sus atributos -->
+    <video src="video/coverr-tram-in-plaza-1566800691940.mp4"
+           width="640" controls
+           autoplay loop muted
+           preload="none"></video>
+    <!-- Elemento video y sus atributos con preload none-->
+    <video src="video/coverr-tram-in-plaza-1566800691940.mp4"
+           width="640" controls
+           loop muted poster="img/coverr-tram-in-plaza-1566800691940.jpg"
+           preload="none"></video>
+    <!-- Elemento video con subtítulos -->
+    <video controls width="640">
+        <source src="video/coverr-tram-in-plaza-1566800691940.mp4">
+        <track src="video/sub_es.vtt"
+               srclang="es"
+               label="Castellano"
+               default>
+        <track src="video/sub_en.vtt"
+               srclang="en"
+               label="Inglés">
+    </video>
+    <!-- Elemento iframe con video embebido -->
+    <iframe width="640" height="320"
+            src="https://www.youtube.com/embed/5AvX7emoOso" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
+    <!-- Elemento línea -->
+    <hr>
+    <!-- Elemento audio  -->
+    <audio src="audio/cancion.mp3" controls autoplay></audio>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

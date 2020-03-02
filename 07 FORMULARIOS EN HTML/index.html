@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+</head>
+<body>
+    <h3>Formulario estándar</h3>
+    <form>
+        <label for="usuario">Usuario</label>
+        <input id="usuario" type="text">
+        <label for="pass">Contraseña</label>
+        <input id="pass" type="password">
+        <input type="submit" value="Iniciar sesión">
+    </form>
+    <hr>
+    <h3>
+        Formulario de búsqueda sin botón
+        con un solo input sin label
+    </h3>
+    <form>
+        <input type="search"
+               placeholder="Teclee y pulse intro">
+    </form>
+    <hr>
+    <h3>
+        Formulario con atributo autofocus en
+        uno de los campos (precaución en móviles)
+    </h3>
+    <form>
+        <label for="usuario">Usuario</label>
+        <input id="usuario" autofocus type="text">
+        <label for="pass">Contraseña</label>
+        <input id="pass" type="password">
+        <input type="submit" value="Iniciar sesión">
+    </form>
+    <hr>
+    <h3>Formulario con campo número</h3>
+    <form>
+        <label for="cantidad">Cantidad</label>
+        <input id="cantidad" type="number" min="5" max="25" step="5">
+        <input type="submit" value="Añadir a la cesta">
+    </form>
+    <hr>
+    <h3>Formulario con campo fecha (date picker)</h3>
+    <form>
+        <label for="nacimiento">Fecha de nacimiento</label>
+        <input id="nacimiento" type="date" min="1900-01-01" max="2020-12-31">
+        <input type="submit" value="Enviar">
+    </form>
+    <hr>
+    <h3>Formulario con campo email</h3>
+    <form>
+        <label for="correo">Correo electrónico</label>
+        <input id="correo" type="email">
+        <input type="submit" value="Enviar">
+    </form>
+    <hr>
+    <h3>Formulario con radiobotones</h3>
+    <form>
+        <label for="hombre">Hombre</label>
+        <input id="hombre" type="radio" name="sexo" value="hombre">
+        <label for="mujer">Mujer</label>
+        <input id="mujer" type="radio" name="sexo" value="mujer">
+        <label for="nc">Prefiero no contestar</label>
+        <input id="nc" type="radio" name="sexo" value="nc" checked>
+    </form>
+    <hr>
+    <h3>
+        Formulario con input dentro de label
+        (no es necesarios usar for e id)
+    </h3>
+    <form>
+        <label>Fútbol
+            <input type="radio" name="deporte" value="fubtol">
+        </label>
+        <label>Baloncesto
+            <input type="radio" name="deporte" value="baloncesto">
+        </label>
+    </form>
+    <hr>
+    <h3>Formulario con checkbox</h3>
+    <form>
+        <label for="fotografia">Fotografía</label>
+        <input id="fotografia" type="checkbox" name="fotografia" value="si">
+        <label for="pintura">Pintura</label>
+        <input id="pintura" type="checkbox" name="pintura" value="si">
+        <label for="escultura">Escultura</label>
+        <input id="escultura" type="checkbox" name="escultura" value="si">
+    </form>
+    <hr>
+    <h3>Formulario con input de tipo file</h3>
+    <form>
+        <label for="doc">Documento</label>
+        <input type="file" 
+               multiple
+               accept=".pdf"
+               capture="camera">
+            <!-- accept="image/*" Cualquier imagen -->
+            <!-- accept="video/*" Cualquier video -->
+            <!-- accept="audio/*" Cualquier audio -->
+            <!-- accept=".pdf" Solo archivos con esa extensión-->
+    </form>
+    <hr>
+    <h3>Formulario con input de color</h3>
+    <form>
+        <input type="color">
+    </form>
+    <hr>
+    <h3>Formulario con elemento button</h3>
+    <form>
+        <label for="usuario">Usuario</label>
+        <input id="usuario" type="text">
+        <label for="pass">Contraseña</label>
+        <input id="pass" type="password">
+        <button>Cancelar</button>
+        <button type="submit">Iniciar sesión</button>
+    </form>
+    <hr>
+    <h3>Formulario con elemento select</h3>
+    <form>
+        <label for="marca">Seleccione Marca</label>
+        <select>
+            <option value="renault">Renault</option>
+            <option value="vw">Volkswagen</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="opel">Opel</option>
+        </select>
+    </form>
+    <hr>
+    <h3>Formulario con elemento textarea</h3>
+    <form>
+        <label for="comentario">Comentario</label>
+        <textarea id="comentario" cols="40" rows="20"></textarea>
+    </form>
+
+
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlaces en HTML</title>
+</head>
+<body>
+    <!-- Enlaces dentro del sitio web -->
+    <a href="contacto.html">Ir a contacto</a>
+    <a href="contacto.html#aviso">Aviso legal</a>
+    <a href="contacto.html#cookies">Ver por política de cookies</a>
+    <!-- Enlaces fuera del sitio web -->
+    <!-- Por defecto accede en la misma pestaña del navegador -->
+    <a href="http://www.elmundo.es">Acceder a El Mundo</a>
+    <!-- Enlazar en una nueva pestaña -->
+    <a href="http://www.elmundo.es" target="_blank">Acceder a El Mundo</a>
+    <!-- Recursos -->
+    <p>Descargue el contenido:</p>
+    <!-- Descarga o renderiza el archivo si es capaz de interpretarlo -->
+    <a href="docs/ejemplo_esp.pdf">Folleto</a>
+    <!-- Descarga siempre el archivo -->
+    <a href="docs/ejemplo_esp.pdf" download>Descargar folleto</a>
+    <!-- Enlace para llamada telefónica (si el dispositivo lo permite) -->
+    <a href="tel:+34900124457">Llámanos pulsando aquí</a>
+    <!-- Enlace para enviar correos electrónicos -->
+    <a href="mailto:info@acme.es">info@acme.es</a>
+    <!-- Enlace con código JavaScript Inyectado (mala práctica) -->
+    <a href="javascript:alert('Envia un SMS al 8080 para ganar un Ferrari')">
+        Descarga Stranger Things S03E02
+    </a>
+</body>
+</html>
